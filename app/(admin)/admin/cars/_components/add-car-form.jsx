@@ -200,7 +200,7 @@ const AddCarForm = () => {
     useDropzone({
       onDrop: onAiDrop,
       accept: {
-        "image/*": [".jpeg", ".jpg", ".png", ".webp"],
+        "image/*": [".jpeg", ".jpg", ".png", ".webp", "jfif"],
       },
       maxFiles: 1,
       multiple: false,
@@ -256,7 +256,7 @@ const AddCarForm = () => {
   } = useDropzone({
     onDrop: onMultiImagesDrop,
     accept: {
-      "image/*": [".jpeg", ".jpg", ".png", ".webp"],
+      "image/*": [".jpeg", ".jpg", ".png", ".webp", "jfif"],
     },
     multiple: true,
   });
